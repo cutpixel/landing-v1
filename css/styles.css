@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym,
+address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt,
+var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot,
+thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu,nav, output, ruby, section, summary,time, mark, audio, video {	
+	margin: 0;	
+	padding: 0;	
+	border: 0;	
+	font-size: 100%;	
+	font: inherit;	
+	vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	
+	display: block;
+}	
+body {	
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {	
+	quotes: none;
+}
+blockquote:before, blockquote:after,q:before, q:after {	
+	content: '';	
+	content: none;
+}
+table {	
+	border-collapse: collapse;	
+	border-spacing: 0;
+}
+
+/* fonts */
+@font-face {
+	font-family: 'Corbel';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Corbel'), url('../fonts/CORBEL.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Corbel Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Corbel Bold'), url('../fonts/CORBELB.woff') format('woff');
+}
+/* END fonts */
+html{
+}
+
+body{
+	background-color: #000000;
+	background-image:url('../img/dotted_bg.png');
+	background-repeat: repeat-x;
+}
+
+
+/* wrapper */
+.wrapper {
+	width: 960px; 
+	margin: 0 auto; /* 0 = top and bottom / auto = left and right */
+	background-color: white;
+	background-attached: fixed;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  	-webkit-background-size: 3px 3px;
+  	-moz-background-size: 3px 3px;
+	background-size: 3px 3px;
+}
+/* END wrapper */
+
+/* header */
+
+/* fixed navagation*/
+.top_nav {
+	height: 40px;
+	width: 100%;
+	display: inline-block;
+	background-color: #000000;
+}
+
+.top_nav ul {
+	list-style: none;
+}
+
+.top_nav li {
+	font-family: 'Corbel', sans-serif;
+	font-size: 16px;
+}
+
+.top_nav li .left {
+	float: left;
+}
+
+.top_nav li .right {
+	float: right;
+}
+
+.top_nav a {
+	padding: 13px 10px;
+	color: #33CCFF;
+}
+
+.top_nav a:hover {
+	color: #FF0000;
+} 
+/* END fixed navagation */
+
+header img{
+	padding-top: 25px;
+	display: block;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100px;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+h2 {
+	font: 23px 'PT Serif', serif;
+	text-transform:capitalize;
+	text-shadow: 0px 1px 2px #555;
+	text-align: center;
+	padding: 5px 30px 30px;
+}
+/* END header */
+
+/* main nav */
+main {
+font-family: 'PT Serif', serif;
+font-size:16px;
+text-transform:uppercase;
+display: block;
+text-shadow: 0px 0.5px 1px #333333;
+}
+
+h3 {
+	color: #222;
+	text-shadow: 0px 1px 2px #555;
+	border-top: 4px solid black;
+}
+
+.title {
+	height: 69px;
+	text-align: left;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+main .column {
+	float: left; 
+	display: inline;
+}    
+
+/* all columns */
+.one .two .three .four .five .six .seven .eight {
+	display: block;
+}
+
+/* first column */
+.one {
+	margin: 0 5px 0 10px;
+}
+
+/* second - seventh columns */
+.two, .three, .four, .five, .six, .seven {
+	margin: 0 5px;
+	padding: 0px;
+}
+
+/* eighth column */
+.eight {
+	margin: 0 10px 0 5px;
+}
+/* end all columns */
+
+.column{
+	width: 120px;
+}
+
+.column ul {
+	list-style-type: none;
+}
+
+.column  li {
+color:#FF0000;
+	margin-bottom: 10px;	
+}
+
+.column li a {
+	text-align: center;
+	padding: 10px;
+	display: block;
+	border: 1px solid black;
+	
+}
+
+.column .one li a {
+	color: #FFF;
+	background-color: #E34C26;
+
+}
+
+.column .two li a {
+	color: #000000;
+	background-color: #F0DB4F;
+}
+
+.column .three li a {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.column .four li a {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.column .five li a {
+	color: #FFFFFF;
+	background-color: #6182B9;
+
+}
+
+.column .six li a {
+	color: #FFFFFF;
+	background-color: #00749A;
+
+}
+
+.column .seven li a {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.column .eight li a {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.column .one li a:hover {
+	background-color: #FFF;
+	color: #E34C26;
+
+}
+
+.column .two li a:hover {
+	background-color: #000000;
+	color: #F0DB4F;
+}
+
+.column .three li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.column .four li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.column .five li a:hover {
+	background-color: #FFFFFF;
+	color: #6182B9;
+
+}
+
+.column .six li a:hover {
+	background-color: #FFFFFF;
+	color: #00749A;
+
+}
+
+.column .seven li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.column .eight li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+/* box effect */
+.effect{
+	-webkit-box-shadow: 0 10px 5px -%px #777;
+	   -moz-box-shadow: 0 10px 5px -5px #777;
+	        box-shadow: 0 10px 5px -5px #777;
+} 
+/* end box effects */
+
+/* footer */
+.clear{
+	clear: both;
+}
+footer {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+footer p {
+	text-align: center;
+	display: block;
+	font-family: 'Corbel', sans-serif;
+	font-size:16px;
+	padding: 10px;
+	border-top: 1px solid black;
+}
+/* END footer */
